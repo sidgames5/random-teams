@@ -1,0 +1,4 @@
+-cp src
+-lib random
+-main Main
+--cpp bin
