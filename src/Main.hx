@@ -28,7 +28,7 @@ class Main {
 		for (i in 0...people) {
 			students.push(i);
 		}
-		students = Random.fromArray(students);
+		students = Random.shuffle(students);
 
 		for (run in 0...runs) {
 			for (student in students) {
