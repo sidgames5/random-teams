@@ -26,7 +26,7 @@ class Main {
 			}
     		});*/
 
-		var students = [];
+		var students = new Array<Int>();
 		for (i in 0...people) {
 			students.push(i);
 		}
