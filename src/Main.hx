@@ -31,6 +31,8 @@ class Main {
 			students.push(i);trace("here");
 		}
 		students = Random.shuffle(students);trace("here");
+		trace(runs);
+		trace(students);
 
 		for (run in 0...runs) {
 			for (student in students) {
