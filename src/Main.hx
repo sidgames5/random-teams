@@ -9,7 +9,7 @@ class Main {
 		var people = 0;
 		var teamSize = 0;
 		var runs = 0;
-		Sys.println("Please assign each person to a number");
+		Sys.println("Please assign each person to a number (first student is numbered 0)");
 		Sys.print("Number of students: ");
 		people = Std.parseInt(Sys.stdin().readLine());
 		Sys.print("Number of students per team: ");
@@ -40,9 +40,9 @@ class Main {
 					teams.push([]);
 				}
 				if (teams[teams.length - 1].length >= teamSize) {
-					teams.push([student]);trace("here");
+					teams.push([student]);
 				} else {
-					teams[teams.length - 1].push(student);trace("here");
+					teams[teams.length - 1].push(student);
 				}
 			}
 
