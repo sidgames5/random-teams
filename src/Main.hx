@@ -46,7 +46,7 @@ class Main {
 			
 			Sys.println("\r\nResults for run " + (run + 1));
 			for (t in 0...teams.length) {
-				Sys.println("Team " + t + ": " + teams[t]);
+				Sys.println("Team " + (t+1) + ": " + teams[t]);
 			}
 			Sys.print("Press enter to continue");
 			Sys.stdin().readLine();
