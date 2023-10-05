@@ -1,3 +1,5 @@
+import sys.thread.Thread;
+
 class Main {
 	static final motd = [];
 	static var finished = false;
@@ -25,12 +27,12 @@ class Main {
     		});
 
 		var students = [];
-		for (i in people) {
+		for (i in 0...people) {
 			students.push(i);
 		}
-		students = Random.shuffle(students);
+		//students = Random.shuffle(students);
 
-		for (run in runs) {
+		for (run in 0...runs) {
 			for (student in students) {
 				if (teams[teams.length - 1].length >= teamSize) {
 					teams.push([student]);
