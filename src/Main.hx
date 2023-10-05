@@ -28,9 +28,10 @@ class Main {
 		for (i in 0...people) {
 			students.push(i);
 		}
-		students = Random.shuffle(students);
+		
 
 		for (run in 0...runs) {
+			students = Random.shuffle(students);
 			for (student in students) {
 				if (teams.length == 0) {
 					teams.push([]);
@@ -49,6 +50,7 @@ class Main {
 			}
 			Sys.print("Press enter to continue");
 			Sys.stdin().readLine();
+			Sys.println("\r\n");
 
 		}
 	}
