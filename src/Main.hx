@@ -51,6 +51,7 @@ class Main {
 			Sys.print("Press enter to continue");
 			Sys.stdin().readLine();
 			Sys.println("\r\n");
+			teams = [];
 
 		}
 	}
