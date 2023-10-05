@@ -44,7 +44,7 @@ class Main {
 			}
 
 			
-			Sys.println("\r\nResults for run " + run);
+			Sys.println("\r\nResults for run " + (run + 1);
 			for (t in 0...teams.length) {
 				Sys.println("Team " + t + ": " + teams[t]);
 			}
