@@ -1,5 +1,8 @@
 class Main {
 	static final motd = [];
+	static var finished = false;
+
+	static var teams = new Array<Array<Int>>();
 	public static function main() {
 		var people = 0;
 		var teamSize = 0;
@@ -20,5 +23,19 @@ class Main {
 				}
 			}
     		});
+
+		for (run in runs) {
+			for (student in people) {
+				if (teams[teams.length - 1].length >= teamSize) {
+					teams.push([student]);
+				} else {
+					teams[teams.length - 1].push(student);
+				}
+			}
+
+			
+			Sys.println("\r\nResults for run " + 1);
+
+		}
 	}
 }
