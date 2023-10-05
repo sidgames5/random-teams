@@ -17,34 +17,34 @@ class Main {
 		Sys.print("Number of runs: ");
 		runs = Std.parseInt(Sys.stdin().readLine());
 
-		Thread.create(() -> {
+		/*Thread.create(() -> {
       			for (m in motd) {
 				if(!finished) {
 				Sys.print("\r" + m);
 				Sys.sleep(5);
 				}
 			}
-    		});
+    		});*/
 
 		var students = [];
 		for (i in 0...people) {
-			students.push(i);
+			students.push(i);trace("here");
 		}
-		//students = Random.shuffle(students);
+		students = Random.shuffle(students);trace("here");
 
 		for (run in 0...runs) {
 			for (student in students) {
 				if (teams[teams.length - 1].length >= teamSize) {
-					teams.push([student]);
+					teams.push([student]);trace("here");
 				} else {
-					teams[teams.length - 1].push(student);
+					teams[teams.length - 1].push(student);trace("here");
 				}
 			}
 
 			
 			Sys.println("\r\nResults for run " + 1);
 			for (t in 0...teams.length) {
-				Sys.println("Team " + t + ": " + teams[t]);
+				Sys.println("Team " + t + ": " + teams[t]);trace("here");
 			}
 			Sys.print("Press enter to continue");
 			Sys.stdin().readLine();
