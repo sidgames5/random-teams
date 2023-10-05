@@ -14,8 +14,10 @@ class Main {
 
 		Thread.create(() -> {
       			for (m in motd) {
+				if(!finished) {
 				Sys.print("\r" + m);
 				Sys.sleep(5);
+				}
 			}
     		});
 	}
