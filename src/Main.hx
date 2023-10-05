@@ -36,6 +36,9 @@ class Main {
 
 		for (run in 0...runs) {
 			for (student in students) {
+				if (teams.length == 0) {
+					teams.push([]);
+				}
 				if (teams[teams.length - 1].length >= teamSize) {
 					teams.push([student]);trace("here");
 				} else {
