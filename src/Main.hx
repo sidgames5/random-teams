@@ -1,4 +1,5 @@
 class Main {
+	static final motd = [];
 	public static function main() {
 		var people = 0;
 		var teamSize = 0;
@@ -10,5 +11,12 @@ class Main {
 		teamSize = Std.parseInt(Sys.stdin().readLine());
 		Sys.print("Number of runs: ");
 		runs = Std.parseInt(Sys.stdin().readLine());
+
+		Thread.create(() -> {
+      			for (m in motd) {
+				Sys.print("\r" + m);
+				Sys.sleep(5);
+			}
+    		});
 	}
 }
