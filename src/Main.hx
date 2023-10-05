@@ -28,11 +28,9 @@ class Main {
 
 		var students = [];
 		for (i in 0...people) {
-			students.push(i);trace("here");
+			students.push(i);
 		}
-		students = Random.shuffle(students);trace("here");
-		trace(runs);
-		trace(students);
+		students = Random.fromArray(students);
 
 		for (run in 0...runs) {
 			for (student in students) {
@@ -49,7 +47,7 @@ class Main {
 			
 			Sys.println("\r\nResults for run " + 1);
 			for (t in 0...teams.length) {
-				Sys.println("Team " + t + ": " + teams[t]);trace("here");
+				Sys.println("Team " + t + ": " + teams[t]);
 			}
 			Sys.print("Press enter to continue");
 			Sys.stdin().readLine();
